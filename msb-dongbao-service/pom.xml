@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>msb-dongbao-mall-parent</artifactId>
+        <groupId>com.xskj</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>msb-dongbao-service</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>msb-dongbao-ums</module>
+        <module>msb-dongbao-oms</module>
+        <module>msb-dongbao-pms</module>
+        <module>msb-dongbao-pay</module>
+        <module>msb-dongbao-cart</module>
+        <module>msb-dongbao-dictionary</module>
+        <module>msb-dongbao-sms</module>
+        <module>msb-dongbao-cms</module>
+    </modules>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>com.xskj</groupId>
+            <artifactId>msb-dongbao-common-base</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-crypto</artifactId>
+            <version>5.3.2.RELEASE</version>
+        </dependency>
+
+    </dependencies>
+</project>
